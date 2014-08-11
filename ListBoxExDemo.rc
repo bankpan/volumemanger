@@ -1,0 +1,248 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LISTBOXEXDEMO_DIALOG DIALOGEX 0, 0, 278, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "加密磁盘文件管理"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "同步",IDOK,202,144,57,20
+    LISTBOX         IDC_LIST,21,36,239,103,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "所有加密磁盘文件及位置:             ",IDC_LISTBUDDY,"Button",BS_OWNERDRAW | WS_TABSTOP,18,4,247,17,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,0,33,17,105
+    LTEXT           "1",IDC_STATIC,5,39,8,8
+    LTEXT           "2",IDC_STATIC,5,49,8,8
+    LTEXT           "3",IDC_STATIC,5,59,8,8
+    LTEXT           "4",IDC_STATIC,5,69,8,8
+    LTEXT           "5",IDC_STATIC,5,79,8,8
+    LTEXT           "6",IDC_STATIC,5,89,8,8
+    LTEXT           "7",IDC_STATIC,5,99,8,8
+    LTEXT           "8",IDC_STATIC,5,109,8,8
+    LTEXT           "10",IDC_STATIC,5,129,8,8
+    LTEXT           "9",IDC_STATIC,5,119,8,8
+    LTEXT           "加密磁盘文件在插入UKey后会自动弹出磁盘盘符。",IDC_STATIC,17,148,179,13
+    CONTROL         "",IDC_EDIT1,"msctls_progress32",PBS_SMOOTH | WS_BORDER,18,174,243,15
+    CONTROL         "全选",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,24,34,10
+END
+
+IDD_INPUTBOX DIALOGEX 0, 0, 139, 15
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入USBKey的口令："
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,91,2,45,12
+    EDITTEXT        IDC_INPUT,7,1,78,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_MYDLG DIALOGEX 0, 0, 151, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "configuration"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "选择配置文件",IDC_STATIC,9,10,47,10
+    EDITTEXT        IDC_EDIT7,64,9,70,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,136,8,12,14
+    GROUPBOX        "选项",IDC_STATIC,5,26,141,79
+    LTEXT           "用户ID",IDC_STATIC,16,38,43,10
+    EDITTEXT        IDC_EDIT3,64,37,70,12,ES_AUTOHSCROLL
+    LTEXT           "口令：",IDC_STATIC,16,55,43,10
+    EDITTEXT        IDC_EDIT1,64,54,70,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "服务器地址：",IDC_STATIC,16,72,43,10
+    EDITTEXT        IDC_EDIT4,64,71,70,12,ES_AUTOHSCROLL
+    LTEXT           "备份路径",IDC_STATIC,16,89,43,10
+    EDITTEXT        IDC_EDIT2,64,88,70,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存文件",IDOK,94,108,53,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,0
+ PRODUCTVERSION 1,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "加密磁盘文件管理工具"
+            VALUE "CompanyName", "Etaray 杭州奕锐电子有限公司"
+            VALUE "FileDescription", "加密磁盘文件管理工具"
+            VALUE "FileVersion", "1.0.2"
+            VALUE "InternalName", "加密磁盘文件管理工具"
+            VALUE "LegalCopyright", "Etaray Copyright (C) 2009"
+            VALUE "LegalTrademarks", "加密磁盘文件管理工具"
+            VALUE "OriginalFilename", "volume manger.exe"
+            VALUE "PrivateBuild", "加密磁盘文件管理工具"
+            VALUE "ProductName", "volume manger.exe"
+            VALUE "ProductVersion", "1.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MYDLG, DIALOG
+    BEGIN
+        TOPMARGIN, 4
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "配置"
+    BEGIN
+        MENUITEM "参数",                          ID_32773
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "1.bmp"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ListBoxExDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ListBoxExDemo.ico"
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ListBoxExDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
