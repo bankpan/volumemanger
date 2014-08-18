@@ -89,6 +89,8 @@ BEGIN_MESSAGE_MAP( CListBoxEx, CCheckListBox)
 	
 
 	ON_CONTROL_REFLECT(LBN_SELCHANGE, &CListBoxEx::OnLbnSelchange)
+	
+	ON_WM_MBUTTONDBLCLK()
 END_MESSAGE_MAP()
 
 IMPLEMENT_DYNCREATE( CListBoxEx, CCheckListBox)
@@ -2337,3 +2339,7 @@ void CListBoxEx::OnLbnSelchange()
 	/*	RedrawWindow();*/
 	// TODO: 在此添加控件通知处理程序代码
 }
+
+
+
+

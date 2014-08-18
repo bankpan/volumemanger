@@ -11,7 +11,7 @@
 /////////////////////////////////////////////////////////////////////////////
 // CListBoxExDemoDlg dialog
 #include "TextProgressCtrl.h"
-#include"InPlaceCtrls.h"
+#include "InPlaceCtrls.h"
 #include "ListBoxEx.h"
 #include "SHBrowseDlg.h"
 #include<string>

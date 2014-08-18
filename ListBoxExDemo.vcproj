@@ -222,10 +222,6 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\InputBox.cpp"
-				>
-			</File>
-			<File
 				RelativePath="ListBoxExDemo.cpp"
 				>
 				<FileConfiguration
@@ -243,26 +239,6 @@
 					<Tool
 						Name="VCCLCompilerTool"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="ListBoxExDemo.rc"
-				>
-				<FileConfiguration
-					Name="Debug|Win32"
-					>
-					<Tool
-						Name="VCResourceCompilerTool"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCResourceCompilerTool"
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -288,10 +264,6 @@
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
-			</File>
-			<File
-				RelativePath=".\Markup.cpp"
-				>
 			</File>
 			<File
 				RelativePath=".\MyDlg.cpp"
@@ -321,25 +293,13 @@
 					/>
 				</FileConfiguration>
 			</File>
-			<File
-				RelativePath=".\TextProgressCtrl.cpp"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl"
 			>
 			<File
-				RelativePath=".\CMemDC.h"
-				>
-			</File>
-			<File
 				RelativePath=".\HTCSPApi.h"
-				>
-			</File>
-			<File
-				RelativePath=".\InputBox.h"
 				>
 			</File>
 			<File
@@ -351,19 +311,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\Markup.h"
-				>
-			</File>
-			<File
 				RelativePath=".\MyDlg.h"
 				>
 			</File>
 			<File
 				RelativePath="StdAfx.h"
-				>
-			</File>
-			<File
-				RelativePath=".\TextProgressCtrl.h"
 				>
 			</File>
 		</Filter>
@@ -378,6 +330,26 @@
 			<File
 				RelativePath="res\ListBoxExDemo.ico"
 				>
+			</File>
+			<File
+				RelativePath="ListBoxExDemo.rc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath="res\ListBoxExDemo.rc2"
@@ -475,6 +447,38 @@
 			</File>
 			<File
 				RelativePath="Include\SHBrowseDlg.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Class Files"
+			>
+			<File
+				RelativePath=".\CMemDC.h"
+				>
+			</File>
+			<File
+				RelativePath=".\InputBox.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\InputBox.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Markup.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Markup.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TextProgressCtrl.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\TextProgressCtrl.h"
 				>
 			</File>
 		</Filter>

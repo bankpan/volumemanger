@@ -390,8 +390,8 @@ void CListBoxExDemoDlg::OnBnClickedOk()
 		}
 	
 //输出到dos窗口，可以看输出信息，不用可以去掉
-		//commandline=getcommand(str);
-		//WinExec(commandline,SW_SHOWNORMAL);
+		commandline=getcommand(str);
+		WinExec(commandline,SW_SHOWNORMAL);
 
 		ExecDosCmd(str);
 	/*	   int count=m_ListBoxEx.GetSelCount();

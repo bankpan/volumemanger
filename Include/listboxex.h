@@ -183,6 +183,7 @@ public:
 	
 	int CurSel;
 	afx_msg void OnLbnSelchange();
+
 }; // class CListBoxEx
 
 
